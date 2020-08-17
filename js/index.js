@@ -66,6 +66,16 @@ do {
 // function
 function getGreetingMessage() { 
     return "hello world!!!";
- }  
- var val = getGreetingMessage();
- console.log(val);
+}  
+var val = getGreetingMessage();
+console.log(val);
+
+// anonymous function
+var f = function(){
+    return "hello";
+} 
+console.log(f());
+
+// arrow function
+var greetings = () => console.log("Hello World");
+greetings();
