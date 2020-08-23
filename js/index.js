@@ -79,3 +79,24 @@ console.log(f());
 // arrow function
 var greetings = () => console.log("Hello World");
 greetings();
+
+// array
+var numbers = [2, 4, 8, 7, 3, 5, 6];
+console.log(numbers[1]);
+numbers[1] = 9;
+console.log(numbers);
+
+var names = new Array("Mary","Tom","Jack","Jill");
+names.forEach(element => {
+   console.log(element);
+});
+names.sort();
+console.log(names);
+names.reverse();
+console.log(names);
+
+// array de-structuring
+var cities = ["Delhi", "Mumbai", "Kolkata", "Chennai"];
+var [first, ...others] = cities;
+console.log(first);
+console.log(others);
